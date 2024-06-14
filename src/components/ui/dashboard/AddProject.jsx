@@ -17,7 +17,7 @@ const AddProject = () => {
     // console.log(feature, technology)
     const newProject = { url, name, live, githubClient, githubServer, description, feature, technology};
     console.log(newProject)
-    fetch('http://localhost:3000/project/', {
+    fetch('https://portfolio-server-mocha-two.vercel.app/project/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

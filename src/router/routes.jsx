@@ -33,7 +33,7 @@ import ProjectDetails from "../components/ui/home/ProjectDetails";
             {
                 path:'/project/:id',
                 element: <ProjectDetails/>,
-                loader: ({params}) => fetch(`http://localhost:3000/project/${params.id}`)
+                loader: ({params}) => fetch(`https://portfolio-server-mocha-two.vercel.app/project/${params.id}`)
             },
             {
                 path:'/blogs',
@@ -42,7 +42,7 @@ import ProjectDetails from "../components/ui/home/ProjectDetails";
             {
                 path:'/blogs/:id',
                 element: <BlogDetails/>,
-                loader: ({params}) => fetch(`http://localhost:3000/blogs/${params.id}`)
+                loader: ({params}) => fetch(`https://portfolio-server-mocha-two.vercel.app/blogs/${params.id}`)
             },
             {
                 path:'/about',

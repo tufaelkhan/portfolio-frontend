@@ -6,7 +6,7 @@ import { useEffect, useState } from "react"
 const Project = () => {
   const [data, setData ] = useState([])
   useEffect(()=>{
-    fetch('http://localhost:3000/project')
+    fetch('https://portfolio-server-mocha-two.vercel.app/project')
     .then((res) => res.json())
     .then((data) => setData(data))
   })

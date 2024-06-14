@@ -7,7 +7,7 @@ const AddSkills = () => {
     const name = form.name.value;
     const newSkill = { image: url, name};
     console.log(newSkill)
-    fetch('http://localhost:3000/skill/', {
+    fetch('https://portfolio-server-mocha-two.vercel.app/skill/', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

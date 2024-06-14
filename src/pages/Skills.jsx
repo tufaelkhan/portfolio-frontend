@@ -4,7 +4,7 @@ import Container from "../components/shared/Container"
 const Skills = () => {
   const [data, setData ] = useState([])
   useEffect(()=>{
-    fetch('http://localhost:3000/skill')
+    fetch('https://portfolio-server-mocha-two.vercel.app/skill')
     .then((res) => res.json())
     .then((data) => setData(data))
   })

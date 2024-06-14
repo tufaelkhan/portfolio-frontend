@@ -15,7 +15,7 @@ const AddBlog = () => {
         const url = form.photo.value;
         const newBlog = {content: value, imageUrl: url};
         console.log(newBlog)
-        fetch('http://localhost:3000/blogs/', {
+        fetch('https://portfolio-server-mocha-two.vercel.app/blogs/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 const Blogs = () => {
   const [data, setData ] = useState([])
   useEffect(()=>{
-    fetch('http://localhost:3000/blogs')
+    fetch('https://portfolio-server-mocha-two.vercel.app/blogs')
     .then((res) => res.json())
     .then((data) => setData(data))
   })
