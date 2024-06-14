@@ -12,9 +12,9 @@ const Blogs = () => {
 
   return (
     <Container>
-    <div className="mb-[-30px]">
-        <h1 className="text-6xl font-bold text-center mb-7">Blogs</h1>
-        <h3 className="text-4xl font-semibold text-center">My Coding Journal</h3>
+    <div className="mb-[-30px]" data-aos="zoom-in">
+        <h1 className="text-4xl font-bold text-center mb-7">Blogs</h1>
+        <h3 className="text-2xl font-semibold text-center">My Coding Journal</h3>
 
         <div className="mt-14 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-y-8">
         {

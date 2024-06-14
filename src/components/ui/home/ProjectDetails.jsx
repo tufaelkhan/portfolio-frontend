@@ -10,6 +10,12 @@ const ProjectDetails = () => {
         <Container>
             <div>
                 <img className="w-3/4 mx-auto h-96" src={url} alt="image" />
+
+                <div className="mb-7 gap-x-5 flex">
+                    <a href={live} className="btn border-[#d37e2a] hover:bg-[#d37e2a] hover:text-white text-2xl">Live</a>
+                    <a href={client} className="btn border-[#d37e2a] hover:bg-[#d37e2a] hover:text-white text-2xl">Client</a>
+                    <a href={server} className="btn border-[#d37e2a] hover:bg-[#d37e2a] hover:text-white text-2xl">Server</a>
+                </div>
                 <p className="text-xl"><span className="text-2xl font-bold">Description:</span> {description}</p>
                 <h1 className="mt-8 font-bold text-2xl">Project Features</h1>
                 {

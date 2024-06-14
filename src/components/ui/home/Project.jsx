@@ -12,11 +12,11 @@ const Project = () => {
   })
   return (
     <Container>
-      <h1 className="text-6xl font-bold text-center mb-7">My All Projects</h1>
-      <h3 className="text-4xl font-semibold text-center">Explore My Projects</h3>
+      <h1 className="text-4xl font-bold text-center mb-7">My All Projects</h1>
+      <h3 className="text-2xl font-semibold text-center">Explore My Projects</h3>
       <div className="mt-14 grid sm:grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-7 mx-auto">
        {
-        data?.map((item)=>  <div key={item._id} className="card card-compact w-[600px] bg-base-100 shadow-xl">
+        data?.map((item)=>  <div key={item._id} className="card card-compact w-[600px] bg-base-100 shadow-xl" data-aos="fade-up">
         <figure><img className="h-96 w-[600px]" src={item.url} alt="project image" /></figure>
         <div className="card-body">
           <div className="card-actions justify-end">

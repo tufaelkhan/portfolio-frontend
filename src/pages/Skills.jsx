@@ -10,9 +10,10 @@ const Skills = () => {
   })
   return (
     <Container>
-        <h1 className="text-6xl font-bold text-center mb-7">My Expertise</h1>
-      <h3 className="text-4xl font-semibold text-center">Fluent In The Languages Of Web Development</h3>
-      <div className="gird sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
+      <div data-aos="zoom-in-up">
+        <h1 className="text-4xl font-bold text-center mb-7">My Expertise</h1>
+      <h3 className="text-2xl font-semibold text-center">Fluent In The Languages Of Web Development</h3>
+      <div className="gird sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mt-10">
         {
           data?.map((item)=> <div key={item._id}>
             <img src={item?.url} alt="" />
@@ -20,6 +21,7 @@ const Skills = () => {
           </div>)
         }
       </div>
+    </div>
     </Container>
   )
 }

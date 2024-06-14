@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <Container bgColor={true}>
         <div className="">
-        <h3 className="text-3xl text-center font-semibold mb-4">My Contact</h3>
-        <h1 className="text-5xl text-center font-bold mb-10">I WANT TO HEAR FROM YOU</h1>
+        <h3 className="text-2xl text-center font-semibold mb-4">My Contact</h3>
+        <h1 className="text-4xl text-center font-bold mb-10">I WANT TO HEAR FROM YOU</h1>
         <div className="md:flex sm:w-full">
             <div className="md:w-2/3">
                 <input className="text-2xl rounded-lg p-4 w-full m-3 border border-[#e88b2e]" type="text" placeholder="Your Name" onFocus='border border-[#e88b2e]' />

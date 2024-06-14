@@ -9,7 +9,7 @@ import Container from '../../shared/Container';
 const About = () => {
   return (
     <Container bgColor={true}>
-      <div>
+      <div data-aos="fade-up">
     <div className="hero">
   <div className="hero-content flex-col lg:flex-row">
     <div className="md:w-1/2">
