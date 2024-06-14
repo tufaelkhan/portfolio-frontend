@@ -4,12 +4,12 @@ import Container from "../../shared/Container"
 const ProjectDetails = () => {
     const projectDetails = useLoaderData()
     console.log(projectDetails)
-    const {_id, url, live, client, server, description, feature, technology} = projectDetails
+    const { url, live, client, server, description, feature, technology} = projectDetails
   return (
 
         <Container>
-            <div>
-                <img className="w-3/4 mx-auto h-96" src={url} alt="image" />
+            <div className="w-3/4 mx-auto ">
+                <img className="h-96 mb-7" src={url} alt="image" />
 
                 <div className="mb-7 gap-x-5 flex">
                     <a href={live} className="btn border-[#d37e2a] hover:bg-[#d37e2a] hover:text-white text-2xl">Live</a>
@@ -21,7 +21,7 @@ const ProjectDetails = () => {
                 {
                     feature?.map((item, idx)=> <div className="mt-4 font-semibold mb-7 text-xl" key={idx}>
                         <ul>
-                            <li>* {item}</li>
+                            <li>* {item} .</li>
                         </ul>
                     </div>)
                 }
@@ -29,7 +29,7 @@ const ProjectDetails = () => {
                 {
                     technology?.map((item, idx)=> <div className="mt-4 font-semibold text-xl" key={idx}>
                         <ul>
-                            <li>* {item}</li>
+                            <li>* {item} .</li>
                         </ul>
                     </div>)
                 }
