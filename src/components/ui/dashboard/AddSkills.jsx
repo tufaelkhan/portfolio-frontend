@@ -33,12 +33,12 @@ const AddSkills = () => {
         <form onSubmit={handleSkill} className="m-10 w-[600px]">
           <div className="mb-7">
           <label className="text-xl p-2 mb-4" htmlFor="Add URL">skill image url</label>
-          <input name="photo" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" type="text" placeholder="Add skill url"/>
+          <input name="photo" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" required type="text" placeholder="Add skill url"/>
           </div>
 
           <div className="mb-7">
           <label className="text-xl p-2 mb-4" htmlFor="Add skill name">skill name</label>
-          <input name="name" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" type="text" placeholder="Add skill name" />
+          <input name="name" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" required type="text" placeholder="Add skill name" />
           </div>
 
           <input className='bg-[#e88b2e] text-3xl mt-4 py-2 rounded-2xl w-full text-white font-semibold' type="submit" value="submit" />

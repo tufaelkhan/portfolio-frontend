@@ -45,41 +45,41 @@ const AddProject = () => {
         <form onSubmit={handleProject} className="m-10 w-[600px]">
           <div className="mb-7">
           <label className="text-xl p-2 mb-4" htmlFor="Add URL">Project Image</label>
-          <input name="photo" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" type="text" placeholder="give project url"/>
+          <input name="photo" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" required type="text" placeholder="give project url"/>
           </div>
 
           <div className="mb-7">
           <label className="text-xl p-2 mb-4" htmlFor="Project name">Project name</label>
-          <input name="name" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" type="text" placeholder="Write Project Name" />
+          <input name="name" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" required type="text" placeholder="Write Project Name" />
           </div>
 
           <div className="mb-7">
           <label className="text-xl p-2 mb-4" htmlFor="Project live Link">Project Live Link</label>
-          <input name="live" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" type="text" placeholder="Give Live Link" />
+          <input name="live" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" required type="text" placeholder="Give Live Link" />
           </div>
 
           <div className="mb-7">
           <label className="text-xl p-2 mb-4" htmlFor="Project Github Client">Project Github Client</label>
-          <input name="client" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" type="text" placeholder="Project Github Client" />
+          <input name="client" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" required type="text" placeholder="Project Github Client" />
           </div>
           <div className="mb-7">
           <label className="text-xl p-2 mb-4" htmlFor="Project Github Server">Project Github Server</label>
-          <input name="server" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" type="text" placeholder="Project Github Server" />
+          <input name="server" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" required type="text" placeholder="Project Github Server" />
           </div>
 
           <div className="mb-7">
           <label className="text-xl p-2 mb-4" htmlFor="Project Description">Project Description</label>
-          <textarea name="description" id="" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg h-full min-h-44" placeholder="Write Project Description"></textarea>
+          <textarea name="description" required className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg h-full min-h-44" placeholder="Write Project Description"></textarea>
           </div>
           <div className="mb-7">
           <label className="text-xl p-2 mb-4" htmlFor="Add Features">Features </label>
-          <textarea name="features" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" type="text" placeholder="Add Features" />
+          <textarea name="features" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" type="text" required placeholder="Add Features" />
           <p>Features will be spited by full stop (.)</p>
           </div>
 
           <div className="mb-7">
           <label className="text-xl p-2 mb-4" htmlFor="Add Technology">Technology </label>
-          <textarea name="technology" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" type="text" placeholder="Add Technology" />
+          <textarea name="technology" className="text-2xl p-2 py-2 w-full mt-2 border border-[#e88b2e] rounded-lg" type="text" required placeholder="Add Technology" />
           <p>Technology will be spited by full stop (.)</p>
           </div>
           <input className='bg-[#e88b2e] text-3xl mt-4 py-2 rounded-2xl w-full text-white font-semibold' type="submit" value="submit" />
